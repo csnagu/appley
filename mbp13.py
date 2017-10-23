@@ -74,8 +74,6 @@ def duplicate_db(db_name):
     conn.close()
 
 def compare_db(db_name):
-    duplicate_db(db_name)
-
     conn = sqlite3.connect(db_name)
     c = conn.cursor()
 
